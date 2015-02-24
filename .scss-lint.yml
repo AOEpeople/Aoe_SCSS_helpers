@@ -1,0 +1,151 @@
+exclude:
+    - 'scss/lib/**/*.scss'
+    - 'scss/helper/_mediaqueries.scss'
+    - 'scss/base/fonts/*.scss'
+    - 'scss/modules/_global_searchperience.scss'
+
+linters:
+    BorderZero:
+        enabled: true
+
+    CapitalizationInSelector:
+        enabled: false
+
+    ColorKeyword:
+        enabled: true
+
+    Comment:
+        enabled: false
+
+    DebugStatement:
+        enabled: true
+
+    DeclarationOrder:
+        enabled: false
+
+    DuplicateProperty:
+        enabled: false
+
+    ElsePlacement:
+        enabled: true
+
+    EmptyLineBetweenBlocks:
+        enabled: true
+
+    EmptyRule:
+        enabled: true
+
+    FinalNewline:
+        enabled: true
+
+    HexLength:
+        enabled: true
+        style: long
+
+    HexNotation:
+        enabled: true
+        style: lowercase
+
+    HexValidation:
+        enabled: true
+
+    IdWithExtraneousSelector:
+        enabled: true
+
+    Indentation:
+        enabled: false
+        width: 4
+
+    LeadingZero:
+        enabled: false
+
+    MergeableSelector:
+        enabled: false
+
+    NameFormat:
+        enabled: true
+
+# NEEDS TO BE FALSE! We need that feature
+    PlaceholderInExtend:
+        enabled: false
+
+    PropertySortOrder:
+        enabled: false
+
+    PropertySpelling:
+        enabled: true
+        extra_properties:
+            - "*zoom"
+
+    SelectorDepth:
+        enabled: false
+        max_depth: 4
+
+    Shorthand:
+        enabled: false
+
+    SingleLinePerProperty:
+        enabled: true
+
+    SingleLinePerSelector:
+        enabled: true
+
+    SortedProperties:
+        enabled: false
+
+    SpaceAfterComma:
+        enabled: false
+
+    SpaceAfterPropertyColon:
+        enabled: true
+
+    SpaceAfterPropertyName:
+        enabled: true
+
+    SpaceBeforeBrace:
+        enabled: true
+
+    SpaceBetweenParens:
+        enabled: true
+        spaces: 0
+
+    StringQuotes:
+        enabled: true
+        style: single_quotes # or double_quotes
+
+    TrailingSemicolon:
+        enabled: true
+
+    UnnecessaryMantissa:
+        enabled: true
+
+    UnnecessaryParentReference:
+        enabled: false
+
+    UrlFormat:
+        enabled: true
+
+    UrlQuotes:
+        enabled: true
+
+    ZeroUnit:
+        enabled: true
+
+    NestingDepth:
+        enabled: false
+        max_depth: 6
+
+    ImportPath:
+        enabled: false
+        leading_underscore: false
+        filename_extension: false
+
+    QualifyingElement:
+        enabled: false
+        allow_element_with_attribute: false
+        allow_element_with_class: false
+        allow_element_with_id: false
+
+    VendorPrefixes:
+        enabled: false
+
