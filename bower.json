@@ -1,0 +1,14 @@
+{
+  "name": "Aoe_SCSS_helpers",
+  "version": "0.1.0",
+  "homepage": "https://github.com/AOEpeople/Aoe_SCSS_helpers",
+  "description": "AOE SCSS helpers.",
+  "authors": [
+    "Marc Dix <marcdix@marcdix.de>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "*",
+    "!*.scss"
+  ]
+}
