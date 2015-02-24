@@ -1,0 +1,23 @@
+// <short description>
+// ---
+
+// <long description>
+// ---
+// @param [string] $component: <description>
+// @param [string] $line-height: <description>
+// @param [string] $lines: <description>
+// ---
+
+@mixin multiline-ellipsis($font-size, $line-height, $lines) {
+    display: block; /* Fallback for non-webkit */
+    display: -webkit-box;
+    max-width: 400px;
+    height: $font-size*$line-height*$lines; /* Fallback for non-webkit */
+    margin: 0 auto;
+    font-size: $font-size;
+    line-height: $line-height;
+    -webkit-line-clamp: $lines;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}

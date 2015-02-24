@@ -1,0 +1,19 @@
+// A clean way to deal with config variables
+// ---
+
+// A function helper to avoid silently failing undefined variables.
+// ---
+// @param [string] $key: they keys name in the $vars variable
+// ---
+// @return [string|number] | [null]
+
+$vars: ();
+
+@function cfg($key) {
+    @if map-has-key($vars, $key) {
+        @return map-get($vars, $key);
+    }
+
+    @warn "Unknown `#{$key}` in $vars.";
+    @return null;
+}
