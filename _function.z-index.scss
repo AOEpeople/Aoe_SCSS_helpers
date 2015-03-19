@@ -2,17 +2,17 @@
 // Based on http://css-tricks.com/handling-z-index/
 // ---
 
-// A function helper to avoid having to type `map-get($z-layers, ...)`
+// A function helper to avoid having to type `map-get($_ZLAYERS, ...)`
 // ---
 // @param [string] $component: the layer to use
 // ---
 // @return [number] | [null]
 
 @function z($layer) {
-  @if map-has-key($z-layers, $layer) {
-    @return map-get($z-layers, $layer);
+  @if map-has-key($_ZLAYERS, $layer) {
+    @return map-get($_ZLAYERS, $layer);
   }
 
-  @warn "No z-index found in $z-layers map for `#{$layer}`. Property omitted.";
+  @warn "No z-index found in $_ZLAYERS map for `#{$layer}`. Property omitted.";
   @return null;
 }
