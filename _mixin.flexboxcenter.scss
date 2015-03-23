@@ -1,0 +1,13 @@
+/// Mixin that centers vertically and horizontally with flexbox
+///
+///
+/// @example
+///     .container {
+///         @include flexboxcenter();
+///     }
+///
+@mixin flexboxcenter() {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
