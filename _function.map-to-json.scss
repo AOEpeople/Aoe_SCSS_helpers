@@ -1,0 +1,26 @@
+/// Converts a map into a json string
+///
+/// @example
+///     body {
+///         &::before {
+///             content: map-to-json((mobile:  320px, tablet:  740px,  desktop: 980px));
+///         }
+///     }
+///
+@function map-to-json($map) {
+    $json: '{';
+    $i: 0;
+    $map-length: length(map-keys($map));
+
+    @each $key, $value in $map {
+        $i: $i + 1;
+        $json: $json + '"#{$key}"' + ':' + '"#{$value}"';
+        @if $i < $map-length {
+            $json: $json + ',';
+        }
+    }
+
+    $json: $json + '}';
+
+    @return $json;
+}
