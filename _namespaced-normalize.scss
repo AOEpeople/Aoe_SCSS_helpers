@@ -1,7 +1,7 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
 // scss-lint:disable ColorVariable
-$namespace: '.my-app' !default;
+$normalize-css-namespace: '.my-app' !default;
 
 /**
  * 1. Set default font family to sans-serif.
@@ -9,7 +9,7 @@ $namespace: '.my-app' !default;
  *    without disabling user zoom.
  */
 
-#{$namespace} {
+#{$normalize-css-namespace} {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -19,11 +19,11 @@ $namespace: '.my-app' !default;
  * Remove default margin.
  */
 
-#{$namespace} {
+#{$normalize-css-namespace} {
   margin: 0;
 }
 
-#{$namespace} {
+#{$normalize-css-namespace} {
 /* HTML5 display definitions
    ========================================================================== */
 
