@@ -1,5 +1,6 @@
 /*! normalize.css v3.0.3 | MIT License | github.com/necolas/normalize.css */
 
+// scss-lint:disable ColorVariable
 $namespace: '.my-app' !default;
 
 /**
@@ -8,7 +9,7 @@ $namespace: '.my-app' !default;
  *    without disabling user zoom.
  */
 
-$namespace {
+#{$namespace} {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
@@ -18,11 +19,11 @@ $namespace {
  * Remove default margin.
  */
 
-$namespace {
+#{$namespace} {
   margin: 0;
 }
 
-$namespace {
+#{$namespace} {
 /* HTML5 display definitions
    ========================================================================== */
 
@@ -146,8 +147,8 @@ $namespace {
    */
 
   mark {
-    background: #ff0;
-    color: #000;
+    background: #ffff00;
+    color: #000000;
   }
 
   /**
@@ -426,3 +427,4 @@ $namespace {
     padding: 0;
   }
 }
+// scss-lint:enable ColorVariable
